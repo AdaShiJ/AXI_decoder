@@ -1,0 +1,235 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x56BA75BE3D300CB1",
+      "device": "xc7z020clg400-1",
+      "name": "decoderTest",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "rst_s00_axi_aclk_100M": "",
+      "Instructions_0": "",
+      "axi_cdma_0": "",
+      "smartconnect_0": "",
+      "axi_bram_ctrl_0": "",
+      "blk_mem_gen_0": "",
+      "decoder_0": ""
+    },
+    "ports": {
+      "reset_rtl": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "m00_axi_init_axi_txn": {
+        "direction": "I"
+      },
+      "clk_100MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "decoderTest_clk_100MHz",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "rst_s00_axi_aclk_100M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "decoderTest_rst_s00_axi_aclk_100M_0"
+      },
+      "Instructions_0": {
+        "vlnv": "xilinx.com:user:Instructions:1.0",
+        "xci_name": "decoderTest_Instructions_0_0"
+      },
+      "axi_cdma_0": {
+        "vlnv": "xilinx.com:ip:axi_cdma:4.1",
+        "xci_name": "decoderTest_axi_cdma_0_0",
+        "parameters": {
+          "C_INCLUDE_SG": {
+            "value": "0"
+          }
+        }
+      },
+      "smartconnect_0": {
+        "vlnv": "xilinx.com:ip:smartconnect:1.0",
+        "xci_name": "decoderTest_smartconnect_0_0",
+        "parameters": {
+          "NUM_MI": {
+            "value": "2"
+          },
+          "NUM_SI": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bridges": [
+              "M00_AXI",
+              "M01_AXI"
+            ]
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "M01_AXI": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        }
+      },
+      "axi_bram_ctrl_0": {
+        "vlnv": "xilinx.com:ip:axi_bram_ctrl:4.1",
+        "xci_name": "decoderTest_axi_bram_ctrl_0_0",
+        "parameters": {
+          "SINGLE_PORT_BRAM": {
+            "value": "1"
+          }
+        }
+      },
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "decoderTest_blk_mem_gen_0_0"
+      },
+      "decoder_0": {
+        "vlnv": "xilinx.com:user:decoder:1.0",
+        "xci_name": "decoderTest_decoder_0_0",
+        "parameters": {
+          "C_M00_AXI_TRANSACTIONS_NUM": {
+            "value": "8"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "axi_cdma_0_M_AXI": {
+        "interface_ports": [
+          "axi_cdma_0/M_AXI",
+          "axi_bram_ctrl_0/S_AXI"
+        ]
+      },
+      "decoder_0_M00_AXI": {
+        "interface_ports": [
+          "decoder_0/M00_AXI",
+          "smartconnect_0/S00_AXI"
+        ]
+      },
+      "smartconnect_0_M01_AXI": {
+        "interface_ports": [
+          "axi_cdma_0/S_AXI_LITE",
+          "smartconnect_0/M01_AXI"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "Instructions_0/S00_AXI"
+        ]
+      },
+      "axi_bram_ctrl_0_BRAM_PORTA": {
+        "interface_ports": [
+          "axi_bram_ctrl_0/BRAM_PORTA",
+          "blk_mem_gen_0/BRAM_PORTA"
+        ]
+      }
+    },
+    "nets": {
+      "rst_s00_axi_aclk_100M_peripheral_aresetn": {
+        "ports": [
+          "rst_s00_axi_aclk_100M/peripheral_aresetn",
+          "Instructions_0/s00_axi_aresetn",
+          "axi_bram_ctrl_0/s_axi_aresetn",
+          "axi_cdma_0/s_axi_lite_aresetn",
+          "decoder_0/m00_axi_aresetn"
+        ]
+      },
+      "reset_rtl_1": {
+        "ports": [
+          "reset_rtl",
+          "rst_s00_axi_aclk_100M/ext_reset_in"
+        ]
+      },
+      "m00_axi_init_axi_txn_1": {
+        "ports": [
+          "m00_axi_init_axi_txn",
+          "decoder_0/m00_axi_init_axi_txn"
+        ]
+      },
+      "clk_100MHz_1": {
+        "ports": [
+          "clk_100MHz",
+          "axi_bram_ctrl_0/s_axi_aclk",
+          "axi_cdma_0/m_axi_aclk",
+          "Instructions_0/s00_axi_aclk",
+          "smartconnect_0/aclk",
+          "axi_cdma_0/s_axi_lite_aclk",
+          "rst_s00_axi_aclk_100M/slowest_sync_clk",
+          "decoder_0/m00_axi_aclk"
+        ]
+      }
+    },
+    "addressing": {
+      "/axi_cdma_0": {
+        "address_spaces": {
+          "Data": {
+            "range": "4G",
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0xC0000000",
+                "range": "8K"
+              }
+            }
+          }
+        }
+      },
+      "/decoder_0": {
+        "address_spaces": {
+          "M00_AXI": {
+            "range": "4G",
+            "width": "32",
+            "segments": {
+              "SEG_Instructions_0_S00_AXI_reg": {
+                "address_block": "/Instructions_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x40000000",
+                "range": "64K"
+              },
+              "SEG_axi_cdma_0_Reg": {
+                "address_block": "/axi_cdma_0/S_AXI_LITE/Reg",
+                "offset": "0x42000000",
+                "range": "64K"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

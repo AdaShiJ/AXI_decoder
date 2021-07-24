@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ipshared/528a/hdl/decoder_v1_0_M00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decoder_v1_0_M00_AXI'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ipshared/528a/hdl/decoder_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decoder_v1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_decoder_0_0/sim/decoderTest_decoder_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decoderTest_decoder_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_7988_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_7988_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/sim/decoderTest.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decoderTest'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/hdl/decoderTest_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decoderTest_wrapper'
