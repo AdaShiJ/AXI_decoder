@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Jul 24 17:09:59 2021
-# Process ID: 12732
+# Start of session at: Thu Jul 29 18:10:05 2021
+# Process ID: 23368
 # Current directory: D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1
 # Command line: vivado.exe -log decoderTest_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoderTest_wrapper.tcl
 # Log file: D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/decoderTest_wrapper.vds
@@ -18,32 +18,32 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21108 
+INFO: Helper process launched with PID 20196 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 494.930 ; gain = 106.320
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 494.875 ; gain = 106.023
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'decoderTest_wrapper' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/hdl/decoderTest_wrapper.vhd:22]
 INFO: [Synth 8-3491] module 'decoderTest' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:14' bound to instance 'decoderTest_i' of component 'decoderTest' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/hdl/decoderTest_wrapper.vhd:31]
 INFO: [Synth 8-638] synthesizing module 'decoderTest' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:26]
-INFO: [Synth 8-3491] module 'decoderTest_Instructions_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_Instructions_0_0_stub.vhdl:5' bound to instance 'Instructions_0' of component 'decoderTest_Instructions_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:381]
-INFO: [Synth 8-638] synthesizing module 'decoderTest_Instructions_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_Instructions_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'decoderTest_axi_bram_ctrl_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'decoderTest_axi_bram_ctrl_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:405]
-INFO: [Synth 8-638] synthesizing module 'decoderTest_axi_bram_ctrl_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_axi_bram_ctrl_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'decoderTest_Instructions_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_Instructions_0_0_stub.vhdl:5' bound to instance 'Instructions_0' of component 'decoderTest_Instructions_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:381]
+INFO: [Synth 8-638] synthesizing module 'decoderTest_Instructions_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_Instructions_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'decoderTest_axi_bram_ctrl_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'decoderTest_axi_bram_ctrl_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:405]
+INFO: [Synth 8-638] synthesizing module 'decoderTest_axi_bram_ctrl_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_axi_bram_ctrl_0_0_stub.vhdl:51]
 WARNING: [Synth 8-5640] Port 'cdma_tvect_out' is missing in component declaration [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:66]
-INFO: [Synth 8-3491] module 'decoderTest_axi_cdma_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_axi_cdma_0_0_stub.vhdl:5' bound to instance 'axi_cdma_0' of component 'decoderTest_axi_cdma_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:448]
-INFO: [Synth 8-638] synthesizing module 'decoderTest_axi_cdma_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_axi_cdma_0_0_stub.vhdl:61]
-INFO: [Synth 8-3491] module 'decoderTest_blk_mem_gen_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'decoderTest_blk_mem_gen_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:500]
-INFO: [Synth 8-638] synthesizing module 'decoderTest_blk_mem_gen_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_blk_mem_gen_0_0_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'decoderTest_decoder_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_decoder_0_0_stub.vhdl:5' bound to instance 'decoder_0' of component 'decoderTest_decoder_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:512]
-INFO: [Synth 8-638] synthesizing module 'decoderTest_decoder_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_decoder_0_0_stub.vhdl:35]
-INFO: [Synth 8-3491] module 'decoderTest_rst_s00_axi_aclk_100M_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_rst_s00_axi_aclk_100M_0_stub.vhdl:5' bound to instance 'rst_s00_axi_aclk_100M' of component 'decoderTest_rst_s00_axi_aclk_100M_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:539]
-INFO: [Synth 8-638] synthesizing module 'decoderTest_rst_s00_axi_aclk_100M_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_rst_s00_axi_aclk_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'decoderTest_smartconnect_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'decoderTest_smartconnect_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:552]
-INFO: [Synth 8-638] synthesizing module 'decoderTest_smartconnect_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-12732-DESKTOP-3VNMBOD/realtime/decoderTest_smartconnect_0_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'decoderTest_axi_cdma_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_axi_cdma_0_0_stub.vhdl:5' bound to instance 'axi_cdma_0' of component 'decoderTest_axi_cdma_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:448]
+INFO: [Synth 8-638] synthesizing module 'decoderTest_axi_cdma_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_axi_cdma_0_0_stub.vhdl:61]
+INFO: [Synth 8-3491] module 'decoderTest_blk_mem_gen_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'decoderTest_blk_mem_gen_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:500]
+INFO: [Synth 8-638] synthesizing module 'decoderTest_blk_mem_gen_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_blk_mem_gen_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'decoderTest_decoder_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_decoder_0_0_stub.vhdl:5' bound to instance 'decoder_0' of component 'decoderTest_decoder_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:512]
+INFO: [Synth 8-638] synthesizing module 'decoderTest_decoder_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_decoder_0_0_stub.vhdl:35]
+INFO: [Synth 8-3491] module 'decoderTest_rst_s00_axi_aclk_100M_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_rst_s00_axi_aclk_100M_0_stub.vhdl:5' bound to instance 'rst_s00_axi_aclk_100M' of component 'decoderTest_rst_s00_axi_aclk_100M_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:539]
+INFO: [Synth 8-638] synthesizing module 'decoderTest_rst_s00_axi_aclk_100M_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_rst_s00_axi_aclk_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'decoderTest_smartconnect_0_0' declared at 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'decoderTest_smartconnect_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:552]
+INFO: [Synth 8-638] synthesizing module 'decoderTest_smartconnect_0_0' [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/.Xil/Vivado-23368-DESKTOP-3VNMBOD/realtime/decoderTest_smartconnect_0_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 'decoderTest' (1#1) [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/synth/decoderTest.vhd:26]
 INFO: [Synth 8-256] done synthesizing module 'decoderTest_wrapper' (2#1) [D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/hdl/decoderTest_wrapper.vhd:22]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 551.098 ; gain = 162.488
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 551.531 ; gain = 162.680
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -56,10 +56,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 551.098 ; gain = 162.488
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 551.531 ; gain = 162.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 551.098 ; gain = 162.488
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 551.531 ; gain = 162.680
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -84,22 +84,22 @@ Parsing XDC File [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/don
 Finished Parsing XDC File [D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 853.660 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 854.340 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 853.660 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 853.660 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 854.344 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 854.344 ; gain = 0.004
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'decoderTest_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.211 ; gain = 466.602
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.527 ; gain = 466.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.211 ; gain = 466.602
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.527 ; gain = 466.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -113,10 +113,10 @@ Applied set_property DONT_TOUCH = true for decoderTest_i/smartconnect_0. (constr
 Applied set_property DONT_TOUCH = true for decoderTest_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for decoderTest_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.211 ; gain = 466.602
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.527 ; gain = 466.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.211 ; gain = 466.602
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.527 ; gain = 466.676
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -152,7 +152,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 855.211 ; gain = 466.602
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.527 ; gain = 466.676
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -166,7 +166,7 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'decoderTest_i/axi_bram_ctrl_0/bram_clk_a' to pin 'decoderTest_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 878.793 ; gain = 490.184
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 878.707 ; gain = 489.855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -178,7 +178,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 888.789 ; gain = 500.180
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 888.699 ; gain = 499.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -202,7 +202,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 888.789 ; gain = 500.180
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 888.699 ; gain = 499.848
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -215,7 +215,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 888.789 ; gain = 500.180
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 888.699 ; gain = 499.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -227,25 +227,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 888.789 ; gain = 500.180
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 888.699 ; gain = 499.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 888.789 ; gain = 500.180
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 888.699 ; gain = 499.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 888.789 ; gain = 500.180
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 888.699 ; gain = 499.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 888.789 ; gain = 500.180
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 888.699 ; gain = 499.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -286,25 +286,25 @@ Report Instance Areas:
 |2     |  decoderTest_i |decoderTest |   667|
 +------+----------------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 888.789 ; gain = 500.180
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 888.699 ; gain = 499.848
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 888.789 ; gain = 196.066
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 888.789 ; gain = 500.180
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 888.699 ; gain = 195.852
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 888.699 ; gain = 499.848
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 904.102 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 902.730 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 33 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 904.102 ; gain = 528.238
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 904.102 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 902.738 ; gain = 526.668
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 902.738 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/VIVADO/decoderTest/decoderTest/decoderTest.runs/synth_1/decoderTest_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file decoderTest_wrapper_utilization_synth.rpt -pb decoderTest_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jul 24 17:10:20 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 29 18:10:26 2021...

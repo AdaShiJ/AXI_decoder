@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:decoder:1.0
--- IP Revision: 51
+-- IP Revision: 84
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -157,7 +157,7 @@ BEGIN
       C_M00_AXI_START_DATA_VALUE => X"AA000000",
       C_M00_AXI_ADDR_WIDTH => 32,
       C_M00_AXI_DATA_WIDTH => 32,
-      C_M00_AXI_TRANSACTIONS_NUM => 8,
+      C_M00_AXI_TRANSACTIONS_NUM => 4,
       C_M00_DDR_BASE_ADDR => X"40000000",
       C_M00_CDMA_BASE_ADDR => X"42000000"
     )

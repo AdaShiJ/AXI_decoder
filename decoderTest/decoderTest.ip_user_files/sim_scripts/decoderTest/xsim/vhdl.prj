@@ -1,6 +1,6 @@
 vhdl xil_defaultlib  \
-"../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/528a/hdl/decoder_v1_0_M00_AXI.vhd" \
-"../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/528a/hdl/decoder_v1_0.vhd" \
+"../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/63ab/hdl/decoder_v1_0_M00_AXI.vhd" \
+"../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/63ab/hdl/decoder_v1_0.vhd" \
 "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_decoder_0_0/sim/decoderTest_decoder_0_0.vhd" \
 "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_rst_s00_axi_aclk_100M_0/sim/decoderTest_rst_s00_axi_aclk_100M_0.vhd" \
 "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/d8cc/hdl/Instructions_v1_0_S00_AXI.vhd" \

@@ -54,15 +54,15 @@ architecture Behavioral of tb is
     signal clk : STD_LOGIC := '1';
     signal reset_rtl: STD_LOGIC := '1';
     signal axi_txn : STD_LOGIC;
-    signal opcode : std_logic := '1';
+--    signal opcode : std_logic := '1';
     --signal insNum : STD_LOGIC;
-    signal tempaddr : std_logic_vector(63 downto 0) := x"0000000000000000";
-    signal nextAddr : std_logic_vector(31 downto 0) := x"00000000";
-    signal insNum : std_logic_vector(31 downto 0) := x"00000000";
-    --shared variable insNum : std_logic_vector(31 downto 0) := x"00000001";
-    signal seeInsNum : std_logic_vector(31 downto 0) := x"00000000";
-    shared variable out1 : INTEGER RANGE 0 TO 5;
-    shared variable cnt  : INTEGER RANGE 0 TO 5;
+--    signal tempaddr : std_logic_vector(63 downto 0) := x"0000000000000000";
+--    signal nextAddr : std_logic_vector(31 downto 0) := x"00000000";
+--    signal insNum : std_logic_vector(31 downto 0) := x"00000000";
+--    --shared variable insNum : std_logic_vector(31 downto 0) := x"00000001";
+--    signal seeInsNum : std_logic_vector(31 downto 0) := x"00000000";
+--    shared variable out1 : INTEGER RANGE 0 TO 5;
+--    shared variable cnt  : INTEGER RANGE 0 TO 5;
 --    signal reg_data_out : STD_LOGIC_VECTOR(31 downto 0);
 --  signal slv_reg0	:std_logic_vector(31 downto 0) := x"0FFFFFFF"; 
 --	signal slv_reg1	:std_logic_vector(31 downto 0) := x"02030320";
@@ -97,26 +97,26 @@ begin
      --reset_rtl <= '1';
      axi_txn <= '1';
 --     reg_data_out <= slv_reg1; 
-     wait for 100*ClockPeriod;
+     wait for 300*ClockPeriod;
    end process ; -- test
 
-    count : process( clk )
-    --VARIABLE    cnt  : INTEGER RANGE 0 TO 5;
-    begin
-    if (rising_edge(clk)) then
-            seeInsNum <= insNum;
-            insNum <= std_logic_vector(to_unsigned(cnt, 32));
-            tempaddr <= x"0000000040000000" + (insNum * x"c");
-            nextAddr <= tempaddr(31 downto 0);
-            cnt := cnt + 1;
-            if (cnt = 5) then
-                --counter := counter +1;
-                cnt := 0;
-                out1 := out1 + 1;
-            end if ;
+--    count : process( clk )
+--    --VARIABLE    cnt  : INTEGER RANGE 0 TO 5;
+--    begin
+--    if (rising_edge(clk)) then
+--            seeInsNum <= insNum;
+--            insNum <= std_logic_vector(to_unsigned(cnt, 32));
+--            tempaddr <= x"0000000040000000" + (insNum * x"c");
+--            nextAddr <= tempaddr(31 downto 0);
+--            cnt := cnt + 1;
+--            if (cnt = 5) then
+--                --counter := counter +1;
+--                cnt := 0;
+--                out1 := out1 + 1;
+--            end if ;
 
-        end if ;
+--        end if ;
 
-    end process;
+--    end process;
 
 end Behavioral;

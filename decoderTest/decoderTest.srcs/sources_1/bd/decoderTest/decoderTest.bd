@@ -122,22 +122,22 @@
         "xci_name": "decoderTest_decoder_0_0",
         "parameters": {
           "C_M00_AXI_TRANSACTIONS_NUM": {
-            "value": "8"
+            "value": "4"
           }
         }
       }
     },
     "interface_nets": {
-      "axi_cdma_0_M_AXI": {
-        "interface_ports": [
-          "axi_cdma_0/M_AXI",
-          "axi_bram_ctrl_0/S_AXI"
-        ]
-      },
       "decoder_0_M00_AXI": {
         "interface_ports": [
           "decoder_0/M00_AXI",
           "smartconnect_0/S00_AXI"
+        ]
+      },
+      "axi_cdma_0_M_AXI": {
+        "interface_ports": [
+          "axi_cdma_0/M_AXI",
+          "axi_bram_ctrl_0/S_AXI"
         ]
       },
       "smartconnect_0_M01_AXI": {
@@ -146,16 +146,16 @@
           "smartconnect_0/M01_AXI"
         ]
       },
-      "smartconnect_0_M00_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "Instructions_0/S00_AXI"
-        ]
-      },
       "axi_bram_ctrl_0_BRAM_PORTA": {
         "interface_ports": [
           "axi_bram_ctrl_0/BRAM_PORTA",
           "blk_mem_gen_0/BRAM_PORTA"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "Instructions_0/S00_AXI"
         ]
       }
     },

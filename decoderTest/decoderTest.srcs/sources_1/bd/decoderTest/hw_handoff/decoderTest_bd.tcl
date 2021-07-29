@@ -189,7 +189,7 @@ proc create_root_design { parentCell } {
   # Create instance: decoder_0, and set properties
   set decoder_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:decoder:1.0 decoder_0 ]
   set_property -dict [ list \
-   CONFIG.C_M00_AXI_TRANSACTIONS_NUM {8} \
+   CONFIG.C_M00_AXI_TRANSACTIONS_NUM {4} \
  ] $decoder_0
 
   # Create instance: rst_s00_axi_aclk_100M, and set properties

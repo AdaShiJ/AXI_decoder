@@ -103,8 +103,8 @@ Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
 Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
 Compiling module xil_defaultlib.decoderTest_blk_mem_gen_0_0
-Compiling architecture implementation of entity xil_defaultlib.decoder_v1_0_M00_AXI [\decoder_v1_0_M00_AXI(0,31)(0,31...]
-Compiling architecture arch_imp of entity xil_defaultlib.decoder_v1_0 [\decoder_v1_0(c_m00_axi_transact...]
+Compiling architecture implementation of entity xil_defaultlib.decoder_v1_0_M00_AXI [\decoder_v1_0_M00_AXI(c_m_transa...]
+Compiling architecture arch_imp of entity xil_defaultlib.decoder_v1_0 [\decoder_v1_0(0,31)(0,31)(0,31)\]
 Compiling architecture decodertest_decoder_0_0_arch of entity xil_defaultlib.decoderTest_decoder_0_0 [decodertest_decoder_0_0_default]
 Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
 Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]

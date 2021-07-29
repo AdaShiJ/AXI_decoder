@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:decoder:1.0
--- IP Revision: 51
+-- IP Revision: 84
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -129,7 +129,7 @@ ARCHITECTURE decoderTest_decoder_0_0_arch OF decoderTest_decoder_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF decoderTest_decoder_0_0_arch : ARCHITECTURE IS "decoderTest_decoder_0_0,decoder_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF decoderTest_decoder_0_0_arch: ARCHITECTURE IS "decoderTest_decoder_0_0,decoder_v1_0,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=decoder,x_ipVersion=1.0,x_ipCoreRevision=51,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_M00_AXI_START_DATA_VALUE=0xAA000000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=8,C_M00_DDR_BASE_ADDR=0x40000000,C_M00_CDMA_BASE_ADDR=0x42000000}";
+  ATTRIBUTE CORE_GENERATION_INFO OF decoderTest_decoder_0_0_arch: ARCHITECTURE IS "decoderTest_decoder_0_0,decoder_v1_0,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=decoder,x_ipVersion=1.0,x_ipCoreRevision=84,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_M00_AXI_START_DATA_VALUE=0xAA000000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=4,C_M00_DDR_BASE_ADDR=0x40000000,C_M00_CDMA_BASE_ADDR=0x42000000}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF m00_axi_aresetn: SIGNAL IS "XIL_INTERFACENAME M00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0";
@@ -163,7 +163,7 @@ BEGIN
       C_M00_AXI_START_DATA_VALUE => X"AA000000",
       C_M00_AXI_ADDR_WIDTH => 32,
       C_M00_AXI_DATA_WIDTH => 32,
-      C_M00_AXI_TRANSACTIONS_NUM => 8,
+      C_M00_AXI_TRANSACTIONS_NUM => 4,
       C_M00_DDR_BASE_ADDR => X"40000000",
       C_M00_CDMA_BASE_ADDR => X"42000000"
     )

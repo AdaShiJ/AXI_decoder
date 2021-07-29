@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Jul 24 17:10:20 2021
+| Date         : Thu Jul 29 18:10:26 2021
 | Host         : DESKTOP-3VNMBOD running 64-bit major release  (build 9200)
 | Command      : report_utilization -file decoderTest_wrapper_utilization_synth.rpt -pb decoderTest_wrapper_utilization_synth.pb
 | Design       : decoderTest_wrapper

@@ -18,8 +18,8 @@
   "C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/528a/hdl/decoder_v1_0_M00_AXI.vhd" \
-  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/528a/hdl/decoder_v1_0.vhd" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/63ab/hdl/decoder_v1_0_M00_AXI.vhd" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/63ab/hdl/decoder_v1_0.vhd" \
   "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_decoder_0_0/sim/decoderTest_decoder_0_0.vhd" \
 -endlib
 -makelib ies_lib/lib_cdc_v1_0_2 \
