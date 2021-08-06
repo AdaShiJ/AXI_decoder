@@ -93,11 +93,11 @@ begin
      
 --     wait for 20 * ClockPeriod;
 --     reg_data_out <= slv_reg0; 
-     wait for ClockPeriod;
+     --wait for ClockPeriod;
      --reset_rtl <= '1';
      axi_txn <= '1';
 --     reg_data_out <= slv_reg1; 
-     wait for 300*ClockPeriod;
+     wait for 1000*ClockPeriod;
    end process ; -- test
 
 --    count : process( clk )

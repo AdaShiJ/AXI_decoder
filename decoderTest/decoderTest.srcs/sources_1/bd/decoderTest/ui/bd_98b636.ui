@@ -2,29 +2,32 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port reset_rtl -pg 1 -y 190 -defaultsOSRD
-preplace port m00_axi_init_axi_txn -pg 1 -y 100 -defaultsOSRD
-preplace port clk_100MHz -pg 1 -y 130 -defaultsOSRD
-preplace inst decoder_0 -pg 1 -lvl 2 -y 80 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 3 -y 80 -defaultsOSRD
-preplace inst axi_cdma_0 -pg 1 -lvl 4 -y 120 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -y 130 -defaultsOSRD
-preplace inst Instructions_0 -pg 1 -lvl 4 -y 290 -defaultsOSRD
-preplace inst rst_s00_axi_aclk_100M -pg 1 -lvl 1 -y 210 -defaultsOSRD
-preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -y 130 -defaultsOSRD
+preplace port reset_rtl -pg 1 -y 100 -defaultsOSRD
+preplace port m00_axi_init_axi_txn -pg 1 -y 220 -defaultsOSRD
+preplace port clk_100MHz -pg 1 -y 20 -defaultsOSRD
+preplace inst decoder_0 -pg 1 -lvl 2 -y 200 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 3 -y 200 -defaultsOSRD
+preplace inst axi_cdma_0 -pg 1 -lvl 4 -y 230 -defaultsOSRD
+preplace inst testDDR_0 -pg 1 -lvl 4 -y 410 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -y 240 -defaultsOSRD
+preplace inst Instructions_0 -pg 1 -lvl 4 -y 80 -defaultsOSRD
+preplace inst rst_s00_axi_aclk_100M -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -y 240 -defaultsOSRD
+preplace netloc smartconnect_0_M02_AXI 1 3 1 930
 preplace netloc smartconnect_0_M01_AXI 1 3 1 N
 preplace netloc axi_cdma_0_M_AXI 1 4 1 N
 preplace netloc decoder_0_M00_AXI 1 2 1 N
 preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 1 N
-preplace netloc rst_s00_axi_aclk_100M_peripheral_aresetn 1 1 4 370 170 NJ 170 970 210 1240
-preplace netloc smartconnect_0_M00_AXI 1 3 1 950
-preplace netloc clk_100MHz_1 1 0 5 20 110 360 160 680 160 960 30 1240
-preplace netloc m00_axi_init_axi_txn_1 1 0 2 NJ 100 NJ
+preplace netloc rst_s00_axi_aclk_100M_peripheral_aresetn 1 1 4 360 280 670 280 950 330 1220
+preplace netloc smartconnect_0_M00_AXI 1 3 1 930
+preplace netloc clk_100MHz_1 1 0 5 20 20 370 120 670 120 940 320 1210
+preplace netloc m00_axi_init_axi_txn_1 1 0 2 NJ 220 NJ
 preplace netloc reset_rtl_1 1 0 1 NJ
-levelinfo -pg 1 0 190 530 820 1110 1390 1650 1780 -top 0 -bot 430
+levelinfo -pg 1 0 190 520 800 1080 1350 1610 1740 -top 0 -bot 490
 "
 }
 {
+   "da_axi4_cnt":"1",
    "da_board_cnt":"1",
-   "da_clkrst_cnt":"14"
+   "da_clkrst_cnt":"15"
 }

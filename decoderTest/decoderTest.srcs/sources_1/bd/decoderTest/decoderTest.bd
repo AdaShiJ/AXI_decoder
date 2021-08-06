@@ -10,12 +10,13 @@
     },
     "design_tree": {
       "rst_s00_axi_aclk_100M": "",
-      "Instructions_0": "",
       "axi_cdma_0": "",
       "smartconnect_0": "",
       "axi_bram_ctrl_0": "",
       "blk_mem_gen_0": "",
-      "decoder_0": ""
+      "Instructions_0": "",
+      "decoder_0": "",
+      "testDDR_0": ""
     },
     "ports": {
       "reset_rtl": {
@@ -61,10 +62,6 @@
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "xci_name": "decoderTest_rst_s00_axi_aclk_100M_0"
       },
-      "Instructions_0": {
-        "vlnv": "xilinx.com:user:Instructions:1.0",
-        "xci_name": "decoderTest_Instructions_0_0"
-      },
       "axi_cdma_0": {
         "vlnv": "xilinx.com:ip:axi_cdma:4.1",
         "xci_name": "decoderTest_axi_cdma_0_0",
@@ -79,7 +76,7 @@
         "xci_name": "decoderTest_smartconnect_0_0",
         "parameters": {
           "NUM_MI": {
-            "value": "2"
+            "value": "3"
           },
           "NUM_SI": {
             "value": "1"
@@ -91,7 +88,8 @@
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
             "bridges": [
               "M00_AXI",
-              "M01_AXI"
+              "M01_AXI",
+              "M02_AXI"
             ]
           },
           "M00_AXI": {
@@ -99,6 +97,10 @@
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           },
           "M01_AXI": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "M02_AXI": {
             "mode": "Master",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           }
@@ -117,6 +119,10 @@
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
         "xci_name": "decoderTest_blk_mem_gen_0_0"
       },
+      "Instructions_0": {
+        "vlnv": "xilinx.com:user:Instructions:1.0",
+        "xci_name": "decoderTest_Instructions_0_0"
+      },
       "decoder_0": {
         "vlnv": "xilinx.com:user:decoder:1.0",
         "xci_name": "decoderTest_decoder_0_0",
@@ -125,13 +131,35 @@
             "value": "4"
           }
         }
+      },
+      "testDDR_0": {
+        "vlnv": "xilinx.com:user:testDDR:1.0",
+        "xci_name": "decoderTest_testDDR_0_0"
       }
     },
     "interface_nets": {
+      "smartconnect_0_M02_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M02_AXI",
+          "testDDR_0/S00_AXI"
+        ]
+      },
+      "axi_bram_ctrl_0_BRAM_PORTA": {
+        "interface_ports": [
+          "axi_bram_ctrl_0/BRAM_PORTA",
+          "blk_mem_gen_0/BRAM_PORTA"
+        ]
+      },
       "decoder_0_M00_AXI": {
         "interface_ports": [
           "decoder_0/M00_AXI",
           "smartconnect_0/S00_AXI"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "Instructions_0/S00_AXI"
         ]
       },
       "axi_cdma_0_M_AXI": {
@@ -145,28 +173,18 @@
           "axi_cdma_0/S_AXI_LITE",
           "smartconnect_0/M01_AXI"
         ]
-      },
-      "axi_bram_ctrl_0_BRAM_PORTA": {
-        "interface_ports": [
-          "axi_bram_ctrl_0/BRAM_PORTA",
-          "blk_mem_gen_0/BRAM_PORTA"
-        ]
-      },
-      "smartconnect_0_M00_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "Instructions_0/S00_AXI"
-        ]
       }
     },
     "nets": {
       "rst_s00_axi_aclk_100M_peripheral_aresetn": {
         "ports": [
           "rst_s00_axi_aclk_100M/peripheral_aresetn",
-          "Instructions_0/s00_axi_aresetn",
           "axi_bram_ctrl_0/s_axi_aresetn",
           "axi_cdma_0/s_axi_lite_aresetn",
-          "decoder_0/m00_axi_aresetn"
+          "smartconnect_0/aresetn",
+          "Instructions_0/s00_axi_aresetn",
+          "decoder_0/m00_axi_aresetn",
+          "testDDR_0/s00_axi_aresetn"
         ]
       },
       "reset_rtl_1": {
@@ -186,11 +204,12 @@
           "clk_100MHz",
           "axi_bram_ctrl_0/s_axi_aclk",
           "axi_cdma_0/m_axi_aclk",
-          "Instructions_0/s00_axi_aclk",
           "smartconnect_0/aclk",
           "axi_cdma_0/s_axi_lite_aclk",
           "rst_s00_axi_aclk_100M/slowest_sync_clk",
-          "decoder_0/m00_axi_aclk"
+          "Instructions_0/s00_axi_aclk",
+          "decoder_0/m00_axi_aclk",
+          "testDDR_0/s00_axi_aclk"
         ]
       }
     },
@@ -224,6 +243,11 @@
               "SEG_axi_cdma_0_Reg": {
                 "address_block": "/axi_cdma_0/S_AXI_LITE/Reg",
                 "offset": "0x42000000",
+                "range": "64K"
+              },
+              "SEG_testDDR_0_S00_AXI_reg": {
+                "address_block": "/testDDR_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x44A00000",
                 "range": "64K"
               }
             }

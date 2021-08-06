@@ -18,8 +18,8 @@
   "C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/63ab/hdl/decoder_v1_0_M00_AXI.vhd" \
-  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/63ab/hdl/decoder_v1_0.vhd" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/e9f4/hdl/decoder_v1_0_M00_AXI.vhd" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/e9f4/hdl/decoder_v1_0.vhd" \
   "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_decoder_0_0/sim/decoderTest_decoder_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/lib_cdc_v1_0_2 \
@@ -30,8 +30,8 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_rst_s00_axi_aclk_100M_0/sim/decoderTest_rst_s00_axi_aclk_100M_0.vhd" \
-  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/d8cc/hdl/Instructions_v1_0_S00_AXI.vhd" \
-  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/d8cc/hdl/Instructions_v1_0.vhd" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/fe53/hdl/Instructions_v1_0_S00_AXI.vhd" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/fe53/hdl/Instructions_v1_0.vhd" \
   "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_Instructions_0_0/sim/decoderTest_Instructions_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/lib_pkg_v1_0_2 \
@@ -154,6 +154,13 @@
   "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_37/sim/bd_7988_m01wn_0.sv" \
   "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_38/sim/bd_7988_m01bn_0.sv" \
   "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_39/sim/bd_7988_m01e_0.sv" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_40/sim/bd_7988_m02s2a_0.sv" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_41/sim/bd_7988_m02arn_0.sv" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_42/sim/bd_7988_m02rn_0.sv" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_43/sim/bd_7988_m02awn_0.sv" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_44/sim/bd_7988_m02wn_0.sv" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_45/sim/bd_7988_m02bn_0.sv" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_46/sim/bd_7988_m02e_0.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/sim/decoderTest_smartconnect_0_0.vhd" \
@@ -175,6 +182,9 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../../decoderTest.srcs/sources_1/bd/decoderTest/sim/decoderTest.vhd" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/0826/hdl/myDDR_v1_0_S00_AXI.vhd" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ipshared/0826/hdl/myDDR_v1_0.vhd" \
+  "../../../../decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_myDDR_0_0/sim/decoderTest_myDDR_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config  -id {runtcl-4}  -suppress 
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -29,7 +30,11 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
-set_property ip_repo_paths d:/VIVADO/decoderTest/ip_repo [current_project]
+set_property ip_repo_paths {
+  d:/VIVADO/decoderTest/ip_repo/testDDR_1.0
+  d:/VIVADO/decoderTest/ip_repo/myDDR_1.0
+  d:/VIVADO/decoderTest/ip_repo
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo d:/VIVADO/decoderTest/decoderTest/decoderTest.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -76,6 +81,12 @@ set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/
 set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_36/bd_7988_m01awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_37/bd_7988_m01wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_38/bd_7988_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_40/bd_7988_m02s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_41/bd_7988_m02arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_42/bd_7988_m02rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_43/bd_7988_m02awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_44/bd_7988_m02wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_smartconnect_0_0/bd_0/ip/ip_45/bd_7988_m02bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_axi_bram_ctrl_0_0/decoderTest_axi_bram_ctrl_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/ip/decoderTest_blk_mem_gen_0_0/decoderTest_blk_mem_gen_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/VIVADO/decoderTest/decoderTest/decoderTest.srcs/sources_1/bd/decoderTest/decoderTest_ooc.xdc]

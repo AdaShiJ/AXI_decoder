@@ -25,4 +25,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==decoderTest_axi
 # IP: bd/decoderTest/ip/decoderTest_blk_mem_gen_0_0/decoderTest_blk_mem_gen_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==decoderTest_blk_mem_gen_0_0 || ORIG_REF_NAME==decoderTest_blk_mem_gen_0_0} -quiet] -quiet
 
+# IP: bd/decoderTest/ip/decoderTest_testDDR_0_0/decoderTest_testDDR_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==decoderTest_testDDR_0_0 || ORIG_REF_NAME==decoderTest_testDDR_0_0} -quiet] -quiet
+
 # XDC: bd/decoderTest/decoderTest_ooc.xdc

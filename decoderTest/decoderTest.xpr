@@ -22,6 +22,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/testDDR_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/myDDR_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -34,20 +36,20 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="pynq-z2"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="159"/>
+    <Option Name="WTXSimLaunchSim" Val="437"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="157"/>
-    <Option Name="WTModelSimExportSim" Val="157"/>
-    <Option Name="WTQuestaExportSim" Val="157"/>
-    <Option Name="WTIesExportSim" Val="157"/>
-    <Option Name="WTVcsExportSim" Val="157"/>
-    <Option Name="WTRivieraExportSim" Val="157"/>
-    <Option Name="WTActivehdlExportSim" Val="157"/>
+    <Option Name="WTXSimExportSim" Val="343"/>
+    <Option Name="WTModelSimExportSim" Val="343"/>
+    <Option Name="WTQuestaExportSim" Val="343"/>
+    <Option Name="WTIesExportSim" Val="343"/>
+    <Option Name="WTVcsExportSim" Val="343"/>
+    <Option Name="WTRivieraExportSim" Val="343"/>
+    <Option Name="WTActivehdlExportSim" Val="343"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -68,8 +70,8 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="decoderTest.bd" FileRelPathName="ip/decoderTest_decoder_0_0/decoderTest_decoder_0_0.xci">
-          <Proxy FileSetName="decoderTest_decoder_0_0"/>
+        <CompFileExtendedInfo CompFileName="decoderTest.bd" FileRelPathName="ip/decoderTest_testDDR_0_0/decoderTest_testDDR_0_0.xci">
+          <Proxy FileSetName="decoderTest_testDDR_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/decoderTest/hdl/decoderTest_wrapper.vhd">
@@ -122,9 +124,9 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="decoderTest_decoder_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/decoderTest_decoder_0_0">
+    <FileSet Name="decoderTest_testDDR_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/decoderTest_testDDR_0_0">
       <Config>
-        <Option Name="TopModule" Val="decoderTest_decoder_0_0"/>
+        <Option Name="TopModule" Val="decoderTest_testDDR_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -159,7 +161,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="decoderTest_decoder_0_0_synth_1" Type="Ft3:Synth" SrcSet="decoderTest_decoder_0_0" Part="xc7z020clg400-1" ConstrsSet="decoderTest_decoder_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/decoderTest_decoder_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="decoderTest_testDDR_0_0_synth_1" Type="Ft3:Synth" SrcSet="decoderTest_testDDR_0_0" Part="xc7z020clg400-1" ConstrsSet="decoderTest_testDDR_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/decoderTest_testDDR_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -186,7 +188,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="decoderTest_decoder_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="decoderTest_decoder_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="decoderTest_decoder_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="decoderTest_testDDR_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="decoderTest_testDDR_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="decoderTest_testDDR_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>
@@ -205,6 +207,20 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
   </Runs>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="runtcl-4"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="16"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="1"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+  </MsgRule>
   <Board>
     <Jumpers/>
   </Board>

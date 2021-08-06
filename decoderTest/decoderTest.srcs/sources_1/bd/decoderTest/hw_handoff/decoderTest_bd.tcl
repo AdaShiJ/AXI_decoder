@@ -198,9 +198,12 @@ proc create_root_design { parentCell } {
   # Create instance: smartconnect_0, and set properties
   set smartconnect_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_0 ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {3} \
    CONFIG.NUM_SI {1} \
  ] $smartconnect_0
+
+  # Create instance: testDDR_0, and set properties
+  set testDDR_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:testDDR:1.0 testDDR_0 ]
 
   # Create interface connections
   connect_bd_intf_net -intf_net axi_bram_ctrl_0_BRAM_PORTA [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA]
@@ -208,17 +211,19 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net decoder_0_M00_AXI [get_bd_intf_pins decoder_0/M00_AXI] [get_bd_intf_pins smartconnect_0/S00_AXI]
   connect_bd_intf_net -intf_net smartconnect_0_M00_AXI [get_bd_intf_pins Instructions_0/S00_AXI] [get_bd_intf_pins smartconnect_0/M00_AXI]
   connect_bd_intf_net -intf_net smartconnect_0_M01_AXI [get_bd_intf_pins axi_cdma_0/S_AXI_LITE] [get_bd_intf_pins smartconnect_0/M01_AXI]
+  connect_bd_intf_net -intf_net smartconnect_0_M02_AXI [get_bd_intf_pins smartconnect_0/M02_AXI] [get_bd_intf_pins testDDR_0/S00_AXI]
 
   # Create port connections
-  connect_bd_net -net clk_100MHz_1 [get_bd_ports clk_100MHz] [get_bd_pins Instructions_0/s00_axi_aclk] [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_cdma_0/m_axi_aclk] [get_bd_pins axi_cdma_0/s_axi_lite_aclk] [get_bd_pins decoder_0/m00_axi_aclk] [get_bd_pins rst_s00_axi_aclk_100M/slowest_sync_clk] [get_bd_pins smartconnect_0/aclk]
+  connect_bd_net -net clk_100MHz_1 [get_bd_ports clk_100MHz] [get_bd_pins Instructions_0/s00_axi_aclk] [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_cdma_0/m_axi_aclk] [get_bd_pins axi_cdma_0/s_axi_lite_aclk] [get_bd_pins decoder_0/m00_axi_aclk] [get_bd_pins rst_s00_axi_aclk_100M/slowest_sync_clk] [get_bd_pins smartconnect_0/aclk] [get_bd_pins testDDR_0/s00_axi_aclk]
   connect_bd_net -net m00_axi_init_axi_txn_1 [get_bd_ports m00_axi_init_axi_txn] [get_bd_pins decoder_0/m00_axi_init_axi_txn]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins rst_s00_axi_aclk_100M/ext_reset_in]
-  connect_bd_net -net rst_s00_axi_aclk_100M_peripheral_aresetn [get_bd_pins Instructions_0/s00_axi_aresetn] [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_cdma_0/s_axi_lite_aresetn] [get_bd_pins decoder_0/m00_axi_aresetn] [get_bd_pins rst_s00_axi_aclk_100M/peripheral_aresetn]
+  connect_bd_net -net rst_s00_axi_aclk_100M_peripheral_aresetn [get_bd_pins Instructions_0/s00_axi_aresetn] [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_cdma_0/s_axi_lite_aresetn] [get_bd_pins decoder_0/m00_axi_aresetn] [get_bd_pins rst_s00_axi_aclk_100M/peripheral_aresetn] [get_bd_pins smartconnect_0/aresetn] [get_bd_pins testDDR_0/s00_axi_aresetn]
 
   # Create address segments
   create_bd_addr_seg -range 0x00002000 -offset 0xC0000000 [get_bd_addr_spaces axi_cdma_0/Data] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
   create_bd_addr_seg -range 0x00010000 -offset 0x40000000 [get_bd_addr_spaces decoder_0/M00_AXI] [get_bd_addr_segs Instructions_0/S00_AXI/S00_AXI_reg] SEG_Instructions_0_S00_AXI_reg
   create_bd_addr_seg -range 0x00010000 -offset 0x42000000 [get_bd_addr_spaces decoder_0/M00_AXI] [get_bd_addr_segs axi_cdma_0/S_AXI_LITE/Reg] SEG_axi_cdma_0_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x44A00000 [get_bd_addr_spaces decoder_0/M00_AXI] [get_bd_addr_segs testDDR_0/S00_AXI/S00_AXI_reg] SEG_testDDR_0_S00_AXI_reg
 
 
   # Restore current instance

@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Thu Jul 29 18:09:24 2021
+--Date        : Fri Aug  6 11:18:02 2021
 --Host        : DESKTOP-3VNMBOD running 64-bit major release  (build 9200)
 --Command     : generate_target decoderTest.bd
 --Design      : decoderTest
@@ -18,7 +18,7 @@ entity decoderTest is
     reset_rtl : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of decoderTest : entity is "decoderTest,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=decoderTest,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=14,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of decoderTest : entity is "decoderTest,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=decoderTest,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=1,da_clkrst_cnt=15,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of decoderTest : entity is "decoderTest.hwdef";
 end decoderTest;
@@ -38,31 +38,6 @@ architecture STRUCTURE of decoderTest is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component decoderTest_rst_s00_axi_aclk_100M_0;
-  component decoderTest_Instructions_0_0 is
-  port (
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
-  );
-  end component decoderTest_Instructions_0_0;
   component decoderTest_axi_cdma_0_0 is
   port (
     m_axi_aclk : in STD_LOGIC;
@@ -176,7 +151,26 @@ architecture STRUCTURE of decoderTest is
     M01_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     M01_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M01_AXI_rvalid : in STD_LOGIC;
-    M01_AXI_rready : out STD_LOGIC
+    M01_AXI_rready : out STD_LOGIC;
+    M02_AXI_awaddr : out STD_LOGIC_VECTOR ( 6 downto 0 );
+    M02_AXI_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M02_AXI_awvalid : out STD_LOGIC;
+    M02_AXI_awready : in STD_LOGIC;
+    M02_AXI_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M02_AXI_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M02_AXI_wvalid : out STD_LOGIC;
+    M02_AXI_wready : in STD_LOGIC;
+    M02_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M02_AXI_bvalid : in STD_LOGIC;
+    M02_AXI_bready : out STD_LOGIC;
+    M02_AXI_araddr : out STD_LOGIC_VECTOR ( 6 downto 0 );
+    M02_AXI_arprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M02_AXI_arvalid : out STD_LOGIC;
+    M02_AXI_arready : in STD_LOGIC;
+    M02_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    M02_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M02_AXI_rvalid : in STD_LOGIC;
+    M02_AXI_rready : out STD_LOGIC
   );
   end component decoderTest_smartconnect_0_0;
   component decoderTest_axi_bram_ctrl_0_0 is
@@ -235,6 +229,31 @@ architecture STRUCTURE of decoderTest is
     rsta_busy : out STD_LOGIC
   );
   end component decoderTest_blk_mem_gen_0_0;
+  component decoderTest_Instructions_0_0 is
+  port (
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC
+  );
+  end component decoderTest_Instructions_0_0;
   component decoderTest_decoder_0_0 is
   port (
     m00_axi_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -263,6 +282,31 @@ architecture STRUCTURE of decoderTest is
     m00_axi_txn_done : out STD_LOGIC
   );
   end component decoderTest_decoder_0_0;
+  component decoderTest_testDDR_0_0 is
+  port (
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC
+  );
+  end component decoderTest_testDDR_0_0;
   signal axi_bram_ctrl_0_BRAM_PORTA_ADDR : STD_LOGIC_VECTOR ( 12 downto 0 );
   signal axi_bram_ctrl_0_BRAM_PORTA_CLK : STD_LOGIC;
   signal axi_bram_ctrl_0_BRAM_PORTA_DIN : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -357,6 +401,25 @@ architecture STRUCTURE of decoderTest is
   signal smartconnect_0_M01_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal smartconnect_0_M01_AXI_WREADY : STD_LOGIC;
   signal smartconnect_0_M01_AXI_WVALID : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_ARADDR : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal smartconnect_0_M02_AXI_ARPROT : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal smartconnect_0_M02_AXI_ARREADY : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_ARVALID : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_AWADDR : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal smartconnect_0_M02_AXI_AWPROT : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal smartconnect_0_M02_AXI_AWREADY : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_AWVALID : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_BREADY : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal smartconnect_0_M02_AXI_BVALID : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal smartconnect_0_M02_AXI_RREADY : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal smartconnect_0_M02_AXI_RVALID : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal smartconnect_0_M02_AXI_WREADY : STD_LOGIC;
+  signal smartconnect_0_M02_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal smartconnect_0_M02_AXI_WVALID : STD_LOGIC;
   signal NLW_axi_cdma_0_cdma_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_blk_mem_gen_0_rsta_busy_UNCONNECTED : STD_LOGIC;
   signal NLW_decoder_0_m00_axi_error_UNCONNECTED : STD_LOGIC;
@@ -589,6 +652,25 @@ smartconnect_0: component decoderTest_smartconnect_0_0
       M01_AXI_wready => smartconnect_0_M01_AXI_WREADY,
       M01_AXI_wstrb(3 downto 0) => NLW_smartconnect_0_M01_AXI_wstrb_UNCONNECTED(3 downto 0),
       M01_AXI_wvalid => smartconnect_0_M01_AXI_WVALID,
+      M02_AXI_araddr(6 downto 0) => smartconnect_0_M02_AXI_ARADDR(6 downto 0),
+      M02_AXI_arprot(2 downto 0) => smartconnect_0_M02_AXI_ARPROT(2 downto 0),
+      M02_AXI_arready => smartconnect_0_M02_AXI_ARREADY,
+      M02_AXI_arvalid => smartconnect_0_M02_AXI_ARVALID,
+      M02_AXI_awaddr(6 downto 0) => smartconnect_0_M02_AXI_AWADDR(6 downto 0),
+      M02_AXI_awprot(2 downto 0) => smartconnect_0_M02_AXI_AWPROT(2 downto 0),
+      M02_AXI_awready => smartconnect_0_M02_AXI_AWREADY,
+      M02_AXI_awvalid => smartconnect_0_M02_AXI_AWVALID,
+      M02_AXI_bready => smartconnect_0_M02_AXI_BREADY,
+      M02_AXI_bresp(1 downto 0) => smartconnect_0_M02_AXI_BRESP(1 downto 0),
+      M02_AXI_bvalid => smartconnect_0_M02_AXI_BVALID,
+      M02_AXI_rdata(31 downto 0) => smartconnect_0_M02_AXI_RDATA(31 downto 0),
+      M02_AXI_rready => smartconnect_0_M02_AXI_RREADY,
+      M02_AXI_rresp(1 downto 0) => smartconnect_0_M02_AXI_RRESP(1 downto 0),
+      M02_AXI_rvalid => smartconnect_0_M02_AXI_RVALID,
+      M02_AXI_wdata(31 downto 0) => smartconnect_0_M02_AXI_WDATA(31 downto 0),
+      M02_AXI_wready => smartconnect_0_M02_AXI_WREADY,
+      M02_AXI_wstrb(3 downto 0) => smartconnect_0_M02_AXI_WSTRB(3 downto 0),
+      M02_AXI_wvalid => smartconnect_0_M02_AXI_WVALID,
       S00_AXI_araddr(31 downto 0) => decoder_0_M00_AXI_ARADDR(31 downto 0),
       S00_AXI_arprot(2 downto 0) => decoder_0_M00_AXI_ARPROT(2 downto 0),
       S00_AXI_arready => decoder_0_M00_AXI_ARREADY,
@@ -609,6 +691,30 @@ smartconnect_0: component decoderTest_smartconnect_0_0
       S00_AXI_wstrb(3 downto 0) => decoder_0_M00_AXI_WSTRB(3 downto 0),
       S00_AXI_wvalid => decoder_0_M00_AXI_WVALID,
       aclk => clk_100MHz_1,
-      aresetn => '1'
+      aresetn => rst_s00_axi_aclk_100M_peripheral_aresetn(0)
+    );
+testDDR_0: component decoderTest_testDDR_0_0
+     port map (
+      s00_axi_aclk => clk_100MHz_1,
+      s00_axi_araddr(6 downto 0) => smartconnect_0_M02_AXI_ARADDR(6 downto 0),
+      s00_axi_aresetn => rst_s00_axi_aclk_100M_peripheral_aresetn(0),
+      s00_axi_arprot(2 downto 0) => smartconnect_0_M02_AXI_ARPROT(2 downto 0),
+      s00_axi_arready => smartconnect_0_M02_AXI_ARREADY,
+      s00_axi_arvalid => smartconnect_0_M02_AXI_ARVALID,
+      s00_axi_awaddr(6 downto 0) => smartconnect_0_M02_AXI_AWADDR(6 downto 0),
+      s00_axi_awprot(2 downto 0) => smartconnect_0_M02_AXI_AWPROT(2 downto 0),
+      s00_axi_awready => smartconnect_0_M02_AXI_AWREADY,
+      s00_axi_awvalid => smartconnect_0_M02_AXI_AWVALID,
+      s00_axi_bready => smartconnect_0_M02_AXI_BREADY,
+      s00_axi_bresp(1 downto 0) => smartconnect_0_M02_AXI_BRESP(1 downto 0),
+      s00_axi_bvalid => smartconnect_0_M02_AXI_BVALID,
+      s00_axi_rdata(31 downto 0) => smartconnect_0_M02_AXI_RDATA(31 downto 0),
+      s00_axi_rready => smartconnect_0_M02_AXI_RREADY,
+      s00_axi_rresp(1 downto 0) => smartconnect_0_M02_AXI_RRESP(1 downto 0),
+      s00_axi_rvalid => smartconnect_0_M02_AXI_RVALID,
+      s00_axi_wdata(31 downto 0) => smartconnect_0_M02_AXI_WDATA(31 downto 0),
+      s00_axi_wready => smartconnect_0_M02_AXI_WREADY,
+      s00_axi_wstrb(3 downto 0) => smartconnect_0_M02_AXI_WSTRB(3 downto 0),
+      s00_axi_wvalid => smartconnect_0_M02_AXI_WVALID
     );
 end STRUCTURE;

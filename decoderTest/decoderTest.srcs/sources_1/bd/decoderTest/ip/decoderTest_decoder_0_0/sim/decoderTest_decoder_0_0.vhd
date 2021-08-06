@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:decoder:1.0
--- IP Revision: 84
+-- IP Revision: 145
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
